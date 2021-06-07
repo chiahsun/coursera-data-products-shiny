@@ -1,0 +1,41 @@
+---
+title: "StockChart"
+author: "Chia-Hsun Cheng"
+date: "6/7/2021"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+StockChart is a *Shiny* application built on *quantmod* for quantitative financial analysis and *highcharter* for visualization.
+
+![](./intro.png){width=80%}
+[Stock Chart](https://chiahsun.shinyapps.io/ShinyDemo/)
+
+## Symbols
+
+Enter the *stock symbol*(e.g. AAPL, FB) in the *Symbol* text input.
+
+![](./symbol1.png){width=60%}
+
+![](./symbol2.png){width=60%}
+
+
+## Date Range
+
+Choose the date range(e.g. 5d, 1m, 3m, etc) in the *Source data date range* selection list.
+
+
+![](./daterange.png){width=80%}
+
+## Indicators
+
+Toggle your favorite indicators. (e.g. 5MA, MACD, etc)
+
+![](./indicator1.png){width=60%}
+![](./indicator2.png){width=60%}
+
