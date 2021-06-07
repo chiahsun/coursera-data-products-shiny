@@ -31,3 +31,8 @@ Toggle your favorite indicators under `Indicators
 Mouse over on the chart to get indicator values.
 
 The indicator is computed at server side using the R quantmod package.
+
+Note: 
+
+* If you choose `5d`, then `20MA` won't work.
+* If you choose `5d`, `1m`, then `60MA` won't work.
