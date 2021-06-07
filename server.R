@@ -3,8 +3,14 @@ library(quantmod)
 library(highcharter)
 
 shinyServer(function(input, output) {
+
     # This text can be used for debugging
     output$text <- renderText({ "Loaded" })
+    
+    url <- a("User guide", href="https://github.com/chiahsun/coursera-data-products-shiny/blob/main/guide.md")
+    output$link <- renderUI({
+      tagList("Documentation: ", url)
+    })
     
     output$distPlot <- renderHighchart({
 
@@ -75,5 +81,4 @@ shinyServer(function(input, output) {
         hc <- hc %>% hc_add_theme(hc_theme_darkunica()) %>%
             hc_xAxis(type = "datetime")
     })
-
 })

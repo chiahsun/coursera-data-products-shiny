@@ -24,6 +24,7 @@ shinyUI(fluidPage(
                                  "EMA" = "EMA",
                                  "RSI" = "RSI",
                                  "MACD" = "MACD")),
+            uiOutput("link"),
             textOutput("text")
         ),
 
